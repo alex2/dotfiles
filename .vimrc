@@ -50,6 +50,8 @@ let g:syntastic_check_on_wq = 0
 
 " Work-specific settings
 let g:syntastic_python_flake8_post_args='--ignore=E501,E128,E713,E265,E126,E113,F403,F503,E402'
+let g:syntastic_javascript_checkers = ['eslint']
+"let g:syntastic_javascript_checkers = ['jshint']
 
 " vim-javascript
 " ==============
