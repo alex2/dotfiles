@@ -32,9 +32,19 @@ set shiftwidth=2
 set softtabstop=2
 set smartindent
 
+set wildmenu
+
 autocmd FileType html setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 autocmd FileType javascript setlocal expandtab shiftwidth=2 softtabstop=2
+
+colorscheme koehler
+
+" make searches case-insensitive, unless they contain upper-case letters
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
 
 " Syntastic
 " =========
