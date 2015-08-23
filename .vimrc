@@ -61,7 +61,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height = 5
 
 " Work-specific settings
-let g:syntastic_python_flake8_post_args='--ignore=E501,E128,E713,E265,E126,E113,F403,F503,E402'
+let g:syntastic_python_flake8_post_args='--ignore=E501,E128,E713,E265,E126,E113,F403,F503,E402,E226'
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = g:npm_dir . '/eslint'
 "let g:syntastic_javascript_checkers = ['jshint']
