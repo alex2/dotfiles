@@ -52,15 +52,20 @@ set incsearch
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
 
+let g:npm_dir = substitute(system('npm bin'), '\n\+$', '', '')
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_loc_list_height = 5
 
 " Work-specific settings
 let g:syntastic_python_flake8_post_args='--ignore=E501,E128,E713,E265,E126,E113,F403,F503,E402'
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = g:npm_dir . '/eslint'
 "let g:syntastic_javascript_checkers = ['jshint']
+"let g:syntastic_debug=5
 
 " vim-javascript
 " ==============
