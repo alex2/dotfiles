@@ -34,6 +34,8 @@ set smartindent
 
 set wildmenu
 
+set shellcmdflag=-ic
+
 autocmd FileType html setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 autocmd FileType javascript setlocal expandtab shiftwidth=2 softtabstop=2
