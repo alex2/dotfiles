@@ -77,3 +77,9 @@ let g:javascript_enable_domhtmlcss = 1
 " ========
 
 let g:vim_json_syntax_conceal = 0
+
+" jedi-vim
+" ========
+
+let g:jedi#show_call_signatures = "2"
+autocmd FileType python setlocal completeopt-=preview
