@@ -30,7 +30,10 @@ set nowrap
 set expandtab
 set shiftwidth=2
 set softtabstop=2
-set smartindent
+"set smartindent
+set cindent
+set cinkeys-=0#
+set indentkeys-=0#
 
 set wildmenu
 
